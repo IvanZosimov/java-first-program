@@ -13,6 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - run: echo $ACTIONS_CACHE_URL
     - name: Set up OpenJDK 11
       uses: akv-platform/setup-java@update-toolkit-cache
       with:
