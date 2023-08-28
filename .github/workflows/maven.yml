@@ -20,6 +20,6 @@ jobs:
         java-version: '11'
         cache: 'maven'
       env:
-        SEGMENT_DOWNLOAD_TIMEOUT_MINS: '0.00000001'
+        SEGMENT_DOWNLOAD_TIMEOUT_MINS: '0.0000000001'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
