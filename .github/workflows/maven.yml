@@ -19,5 +19,7 @@ jobs:
         distribution: 'adopt-openj9'
         java-version: '11'
         cache: 'maven'
+      env:
+        SEGMENT_DOWNLOAD_TIMEOUT_MINS: '5'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
